@@ -8,7 +8,7 @@
 
 ---
 
-The original app initially loads 150 pokemon card, it is a little heavy work to load so many info(images+text) instantaneously, so I add infinite scroll functionality(intersect observer); this is triggered when page is scrolled down to the end and then proceed loading consecutive pokemon info. 
+The original app initially loads 150 pokemon card, it is a little heavy work to load so many info(images+text) instantaneously, so I add infinite scroll functionality (intersect observer); this is triggered when page is scrolled down to the end and then proceed loading the following pokemon info. 
 
 ## Build Setup
 
