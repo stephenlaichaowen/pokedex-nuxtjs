@@ -1,6 +1,6 @@
 <template>
   <div>
-    <h1 class="text-4xl mb-8 text-center">NextJS Pokedex</h1>
+    <h1 class="text-4xl mb-8 text-center">NuxtJS Pokedex</h1>
     <PokemonList :pokemon="pokemon" /> 
     <div v-if="loading" class="loading">
       <img src="https://www.intogif.com/resource/image/loading/spin.gif" alt="">
