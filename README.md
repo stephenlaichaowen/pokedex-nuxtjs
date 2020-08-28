@@ -1,10 +1,10 @@
 # Pokedex App
 
-> This project is the clone of [Build a Pokedex with NextJS and Tailwind CSS - SSR vs SSG](https://github.com/jamesqquick/nextjs-pokedex-with-tailwind-css), the original project is built with Nextjs, I rebuilt it with Nuxtjs. 
+> This project is the clone of [Build a Pokedex with NextJS and Tailwind CSS - SSR vs SSG](https://github.com/jamesqquick/nextjs-pokedex-with-tailwind-css), the original project is built with Nextjs, I built it with Nuxtjs. 
 
 ## Technology
 - frontend: Nuxtjs + SSR
-- backend: pokeapi.co
+- backend: [pokeapi.co](https://pokeapi.co/api/v2/pokemon?limit=150)
 
 ---
 
