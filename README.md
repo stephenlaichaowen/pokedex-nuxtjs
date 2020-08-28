@@ -8,7 +8,7 @@
 
 ---
 
-The app initially loads 150 pokemon card, it is a little heavy work to load so many info(images+text) instantaneously, an improvement can be made to add infinite scroll + Intersection Observer + image preloader to optimize the app.  
+The app initially loads 150 pokemon card, it is a little heavy work to load so many info(images+text) instantaneously, so I add infinite scroll functionality(intersect observer); this is triggered when scroll down to the end of the page to dynamically load the pokemon info. 
 
 ## Build Setup
 

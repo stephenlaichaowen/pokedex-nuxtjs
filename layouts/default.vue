@@ -13,6 +13,10 @@
   box-sizing: border-box;
 }
 
+body {
+  height: 500vh;
+}
+
 .fade-enter-active, .fade-leave-active {
   transition: opacity .3s;
 }

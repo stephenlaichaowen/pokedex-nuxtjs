@@ -30,15 +30,17 @@ export default {
   ],
   
   buildModules: [
-    '@nuxtjs/tailwindcss',
+    '@nuxtjs/tailwindcss'
   ],
   
   modules: [
     '@nuxtjs/axios',
+    '@nuxtjs/proxy'
   ],
 
   axios: {
-    baseURL: process.env.BASE_URL || 'https://pokeapi.co/api/v2'
+    baseURL: process.env.BASE_URL || 'https://pokeapi.co/api/v2',
+    // baseURL: process.env.BASE_URL || 'https://jsonplaceholder.typicode.com'
   },
   
   build: {    
