@@ -26,8 +26,8 @@ export default {
       items: [],
       pokemon: [],
       page: 1,
-      offset: 0,
-      limit: 20
+      // offset: 0,
+      // limit: 20
     }
   },
   methods: {
@@ -38,7 +38,8 @@ export default {
     // },
 
     async intersected() {
-      const data = await this.$axios.$get(`/pokemon?offset=${this.offset+=this.limit}&limit=${this.limit}`)
+      // const data = await this.$axios.$get(`/pokemon?offset=${this.offset+=this.limit}&limit=${this.limit}`)
+      const data = await this.$axios.$get(`/pokemon?page=${this.page++}`)
       this.showloader = false
       data.results.map((item, index) => {
         const paddedIndex = ('00' + (index + 1)).slice(-3)

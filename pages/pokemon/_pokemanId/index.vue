@@ -14,7 +14,6 @@
         </p>
       </div>
       <div class="grid">
-        <!-- <h2 class="text-2xl mt-6 mb-2">Types</h2> -->
         <h2 class="font-bold mb-2">Types</h2>
         <p v-for="(type, index) in pokemanType" :key="index">{{ pokemanType[index] }}</p>
       </div>
