@@ -8,7 +8,10 @@
 
 ---
 
-The app initially loads 150 pokemon card, it is a little heavy work to load so many info(images+text) instantaneously, an improvement can be made to add infinite scroll + Intersection Observer + image preloader to optimize the app.  watch live demo [here](https://pokedex-nuxtjs.netlify.app)
+The app initially loads 150 pokemon card, it is a little heavy work to load so many info(images+text) instantaneously, an improvement can be made to add infinite scroll + Intersection Observer + image preloader to optimize the app.  
+
+## DEMO
+[https://pokedex-nuxtjs.netlify.app](https://pokedex-nuxtjs.netlify.app)
 
 ## Build Setup
 
