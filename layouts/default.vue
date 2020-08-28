@@ -5,6 +5,10 @@
 </template>
 
 <style>
+:root {
+  --bg-color: rgb(235, 232, 226);
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -12,7 +16,7 @@
 }
 
 html {
-  background: rgb(235, 232, 226);
+  background: var(--bg-color);
 }
 
 body {
@@ -20,7 +24,7 @@ body {
   max-width: 1440px;
   margin: auto;
   padding-top: 2rem;
-  background: rgb(235, 232, 226);
+  background: var(--bg-color);
 }
 
 .fade-enter-active,

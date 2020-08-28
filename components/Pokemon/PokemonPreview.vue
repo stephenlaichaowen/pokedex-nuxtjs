@@ -1,10 +1,12 @@
 <template>
-  <li>
-    <nuxt-link :to="`/pokemon/${index + 1}`">
-      <img :src="image" alt="pokemon image" />
-      <p>{{ index + 1 }}. {{ name }}</p>
-    </nuxt-link>
-  </li>
+  <div>
+    <li>
+      <nuxt-link :to="`/pokemon/${index + 1}`">
+        <img :src="image" alt="pokemon image" />
+        <p>{{ index + 1 }}. {{ name }}</p>
+      </nuxt-link>
+    </li>
+  </div>
 </template>
 
 <script>
@@ -22,7 +24,12 @@ export default {
       type: String,
       required: true
     }
-  }
+  },
+  data() {
+    return {
+      loading: true
+    }
+  },
 }
 </script>
 

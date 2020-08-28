@@ -1,15 +1,10 @@
 <template>
   <div>
     <h1 class="text-4xl mb-8 text-center">NextJS Pokedex</h1>
-    <PokemonList :pokemon="pokemon" />
-
-    <!-- <Comment 
-      v-for="item in items" 
-      :key="item.id" 
-      :name="item.name"
-      :body="item.body"
-    />-->
-
+    <PokemonList :pokemon="pokemon" /> 
+    <div v-if="loading" class="loading">
+      <img src="https://www.intogif.com/resource/image/loading/spin.gif" alt="">
+    </div>
     <Observer @intersect="intersected" />
   </div>
 </template>
@@ -26,6 +21,7 @@ export default {
       items: [],
       pokemon: [],
       page: 1,
+      loading: true
       // offset: 0,
       // limit: 20
     }
@@ -40,7 +36,6 @@ export default {
     async intersected() {
       // const data = await this.$axios.$get(`/pokemon?offset=${this.offset+=this.limit}&limit=${this.limit}`)
       const data = await this.$axios.$get(`/pokemon?page=${this.page++}`)
-      this.showloader = false
       data.results.map((item, index) => {
         const paddedIndex = ('00' + (index + 1)).slice(-3)
         const image = `http://assets.pokemon.com/assets/cms2/img/pokedex/full/${paddedIndex}.png`
@@ -49,6 +44,7 @@ export default {
           image
         }
         this.pokemon.push(poke)
+        this.loading = false
         console.log(this.pokemon);
       })
     }
@@ -70,3 +66,17 @@ export default {
   // }
 }
 </script>
+
+<style scoped>
+.loading {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: var(--bg-color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+</style>
