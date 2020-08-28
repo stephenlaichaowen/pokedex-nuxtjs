@@ -10,9 +10,6 @@
 
 The app initially loads 150 pokemon card, it is a little heavy work to load so many info(images+text) instantaneously, an improvement can be made to add infinite scroll + Intersection Observer + image preloader to optimize the app.  
 
-## DEMO
-[https://pokedex-nuxtjs.netlify.app](https://pokedex-nuxtjs.netlify.app)
-
 ## Build Setup
 
 ```bash
@@ -37,6 +34,9 @@ $ npm run generate
 Build command - npm run generate
 Publish directory - dist
 ```
+
+## DEMO
+[https://pokedex-nuxtjs.netlify.app](https://pokedex-nuxtjs.netlify.app)
 
 ## Reference
 [Build a Pokedex with NextJS and Tailwind CSS - SSR vs SSG / 
