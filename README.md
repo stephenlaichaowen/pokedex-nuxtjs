@@ -1,6 +1,6 @@
 # Pokedex App
 
-> This project is the clone of [Build a Pokedex with NextJS and Tailwind CSS - SSR vs SSG](https://github.com/jamesqquick/nextjs-pokedex-with-tailwind-css), the original project is built with Nextjs, I built it with Nuxtjs. 
+> This project is the clone of [Build a Pokedex with NextJS and Tailwind CSS - SSR vs SSG](https://github.com/jamesqquick/nextjs-pokedex-with-tailwind-css), the original project is built with Nextjs, and I built it with Nuxtjs. 
 
 ## Technology
 - Frontend: Nuxtjs + SSR
@@ -8,7 +8,7 @@
 
 ---
 
-The app initially loads 150 pokemon card, it is a little heavy work to load so many info(images+text) instantaneously, an improvement can be made to add infinite scroll + Intersection Observer + image preloader to optimize the app
+The app initially loads 150 pokemon card, it is a little heavy work to load so many info(images+text) instantaneously, an improvement can be made to add infinite scroll + Intersection Observer + image preloader to optimize the app.  watch live demo [here](https://pokedex-nuxtjs.netlify.app)
 
 ## Build Setup
 
