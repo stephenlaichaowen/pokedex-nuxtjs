@@ -48,6 +48,7 @@ export default {
           image
         }
         this.pokemon.push(poke)
+        console.log(this.pokemon);
       })
     }
   },

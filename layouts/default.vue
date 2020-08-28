@@ -1,8 +1,8 @@
 <template>
   <div class="bg-gray-300">
-    <main class="container mx-auto max-w-xl pt-8 min-h-screen">      
+    <!-- <main class="container mx-auto max-w-xl pt-8 min-h-screen">       -->
       <nuxt  />
-    </main>
+    <!-- </main> -->
   </div>
 </template>
 
@@ -13,8 +13,17 @@
   box-sizing: border-box;
 }
 
+html {
+
+  background: rgb(235, 232, 226);
+}
+
 body {
-  height: 500vh;
+  height: 100vh;
+  max-width: 1440px;
+  margin: auto;
+  padding-top: 2rem;
+  background: rgb(235, 232, 226);
 }
 
 .fade-enter-active, .fade-leave-active {
